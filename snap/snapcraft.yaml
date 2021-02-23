@@ -4,7 +4,8 @@ base: core20
 
 version: git
 summary: "This is the Test Snap for \"Go Test Snap\""
-description: ""
+description: |
+  Is a Snap
 
 type: app
 confinement: devmode
