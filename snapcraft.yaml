@@ -1,0 +1,24 @@
+name: "go-test-lg"
+title: "Go Test Snap"
+base: core20
+
+version: git
+summary: "This is the Test Snap for \"Go Test Snap\""
+description: ""
+
+type: app
+confinement: devmode
+grade: devel
+
+parts:
+  go-test-lg:
+    plugin: go
+    source: .
+    source-type: git
+    build-packages:
+      - gcc
+      - git
+
+apps:
+  go-test-lg:
+    command: bin/go-test-lg
